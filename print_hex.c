@@ -1,12 +1,12 @@
 #include "main.h"
 
  /**
- * print_hex - prints an unsigned int in hexidecimal form
- * @n: unsigned int to print
- * @c: flag to determine case of printing (0 = lower, 1 = upper)
- *
- * Return: number of digits printed
- */
+  * @print_hex: prints an unsigned int in hexidecimal form
+  * @n: unsigned int to print
+  * @c: flag to determine case of printing (0 = lower, 1 = upper)
+  * Return: number of digits printed
+  */
+
 int print_hex(unsigned int n, unsigned int c)
 {
 	unsigned int a[8];
