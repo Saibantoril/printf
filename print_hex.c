@@ -23,7 +23,7 @@ int print_hex(unsigned int n, unsigned int c)
 	for (i = 1; i < 8; i++)
 	{
 		m /= 16;
-		a[i] = (n / m)  16;
+		a[i] = (n / m) % 16;
 	}
 	for (i = 0, sum = 0, count = 0; i < 8; i++)
 	{

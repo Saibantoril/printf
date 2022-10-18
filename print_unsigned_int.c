@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  *  print_u - prints an unsigned in in decimal notation
@@ -40,7 +40,6 @@ int print_u(va_list u)
  */
 
 int print_o(va_list o)
-
 {
 	unsigned int a[11];
 	unsigned int i, m, n, sum;
@@ -73,7 +72,6 @@ int print_o(va_list o)
  *  Return: number of digits printed
  */
 int print_b(va_list b)
-
 {
 	unsigned int n, m, i, sum;
 	unsigned int a[32];
@@ -86,8 +84,8 @@ int print_b(va_list b)
 	{
 		m /= 2;
 		a[i] = (n / m) % 2;
-											}
-	for (i  0, sum = 0, count = 0; i < 32; i++)
+	}
+	for (i = 0, sum = 0, count = 0; i < 32; i++)
 	{
 		sum += a[i];
 		if (sum || i == 31)
